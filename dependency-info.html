@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20130901" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>myservice-osgi-template - Dependency Information</title>
+    <title>myservice-api - Dependency Information</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.0.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -45,9 +45,6 @@
 </li>
                   
                       <li>      <a href="faq.html"  title="FAQ">FAQ</a>
-</li>
-                  
-                      <li>      <a href="readme.html"  title="Readme">Readme</a>
 </li>
                           </ul>
       </li>
@@ -90,8 +87,6 @@
 </li>
                                   <li>      <a href="license.html"  title="Project License">Project License</a>
 </li>
-                                  <li>      <a href="modules.html"  title="Project Modules">Project Modules</a>
-</li>
                                   <li>      <a href="dependency-management.html"  title="Dependency Management">Dependency Management</a>
 </li>
                                   <li>      <a href="team-list.html"  title="Project Team">Project Team</a>
@@ -112,26 +107,15 @@
 </li>
                                   <li>      <a href="changelog.html"  title="Change Log">Change Log</a>
 </li>
-                                  <li>      <a href="changes-report.html"  title="Changes Report">Changes Report</a>
-</li>
                               </ul>
             </li>
                           </ul>
       </li>
-                      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules <b class="caret"></b></a>
+                <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parent Project <b class="caret"></b></a>
         <ul class="dropdown-menu">
         
-                      <li>      <a href="../../../../../../$%7Bmaven.local.site%7D/eu.artofcoding.myservice/myservice-api/index.html"  title="Unnamed - eu.artofcoding.myservice:myservice-api:bundle:1.0.0-SNAPSHOT">Unnamed - eu.artofcoding.myservice:myservice-api:bundle:1.0.0-SNAPSHOT</a>
-</li>
-                  
-                      <li>      <a href="../../../../../../$%7Bmaven.local.site%7D/eu.artofcoding.myservice/myservice-impl/index.html"  title="Unnamed - eu.artofcoding.myservice:myservice-impl:bundle:1.0.0-SNAPSHOT">Unnamed - eu.artofcoding.myservice:myservice-impl:bundle:1.0.0-SNAPSHOT</a>
-</li>
-                  
-                      <li>      <a href="../../../../../../$%7Bmaven.local.site%7D/eu.artofcoding.myservice/myservice-client/index.html"  title="Unnamed - eu.artofcoding.myservice:myservice-client:bundle:1.0.0-SNAPSHOT">Unnamed - eu.artofcoding.myservice:myservice-client:bundle:1.0.0-SNAPSHOT</a>
-</li>
-                  
-                      <li>      <a href="../../../../../../$%7Bmaven.local.site%7D/eu.artofcoding.myservice/myservice-config/index.html"  title="Unnamed - eu.artofcoding.myservice:myservice-config:bundle:1.0.0-SNAPSHOT">Unnamed - eu.artofcoding.myservice:myservice-config:bundle:1.0.0-SNAPSHOT</a>
+                      <li>      <a href="../index.html"  title="myservice-osgi-template">myservice-osgi-template</a>
 </li>
                           </ul>
       </li>
@@ -150,7 +134,7 @@
           <div id="banner">
         <div class="pull-left">
                                 <div id="bannerLeft">
-                <h2>myservice-osgi-template</h2>
+                <h2>myservice-api</h2>
                 </div>
                       </div>
         <div class="pull-right">  </div>
@@ -181,38 +165,38 @@
 <div class="source">
 <pre>&lt;dependency&gt;
   &lt;groupId&gt;eu.artofcoding.myservice&lt;/groupId&gt;
-  &lt;artifactId&gt;myservice-osgi-template&lt;/artifactId&gt;
+  &lt;artifactId&gt;myservice-api&lt;/artifactId&gt;
   &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
-  &lt;type&gt;pom&lt;/type&gt;
+  &lt;type&gt;bundle&lt;/type&gt;
 &lt;/dependency&gt;</pre></div></div>
 <div class="section">
 <h3>Apache Buildr<a name="Apache_Buildr"></a></h3><a name="Apache_Buildr"></a>
 <div class="source">
-<pre>'eu.artofcoding.myservice:myservice-osgi-template:pom:1.0.0-SNAPSHOT'</pre></div></div>
+<pre>'eu.artofcoding.myservice:myservice-api:bundle:1.0.0-SNAPSHOT'</pre></div></div>
 <div class="section">
 <h3>Apache Ant<a name="Apache_Ant"></a></h3><a name="Apache_Ant"></a>
 <div class="source">
-<pre>&lt;dependency org=&quot;eu.artofcoding.myservice&quot; name=&quot;myservice-osgi-template&quot; rev=&quot;1.0.0-SNAPSHOT&quot;&gt;
-  &lt;artifact name=&quot;myservice-osgi-template&quot; type=&quot;pom&quot; /&gt;
+<pre>&lt;dependency org=&quot;eu.artofcoding.myservice&quot; name=&quot;myservice-api&quot; rev=&quot;1.0.0-SNAPSHOT&quot;&gt;
+  &lt;artifact name=&quot;myservice-api&quot; type=&quot;bundle&quot; /&gt;
 &lt;/dependency&gt;</pre></div></div>
 <div class="section">
 <h3>Groovy Grape<a name="Groovy_Grape"></a></h3><a name="Groovy_Grape"></a>
 <div class="source">
 <pre>@Grapes(
-@Grab(group='eu.artofcoding.myservice', module='myservice-osgi-template', version='1.0.0-SNAPSHOT')
+@Grab(group='eu.artofcoding.myservice', module='myservice-api', version='1.0.0-SNAPSHOT')
 )</pre></div></div>
 <div class="section">
 <h3>Grails<a name="Grails"></a></h3><a name="Grails"></a>
 <div class="source">
-<pre>compile 'eu.artofcoding.myservice:myservice-osgi-template:1.0.0-SNAPSHOT'</pre></div></div>
+<pre>compile 'eu.artofcoding.myservice:myservice-api:1.0.0-SNAPSHOT'</pre></div></div>
 <div class="section">
 <h3>Leiningen<a name="Leiningen"></a></h3><a name="Leiningen"></a>
 <div class="source">
-<pre>[eu.artofcoding.myservice/myservice-osgi-template &quot;1.0.0-SNAPSHOT&quot;]</pre></div></div>
+<pre>[eu.artofcoding.myservice/myservice-api &quot;1.0.0-SNAPSHOT&quot;]</pre></div></div>
 <div class="section">
 <h3>SBT<a name="SBT"></a></h3><a name="SBT"></a>
 <div class="source">
-<pre>libraryDependencies += &quot;eu.artofcoding.myservice&quot; %% &quot;myservice-osgi-template&quot; % &quot;1.0.0-SNAPSHOT&quot;</pre></div></div></div>
+<pre>libraryDependencies += &quot;eu.artofcoding.myservice&quot; %% &quot;myservice-api&quot; % &quot;1.0.0-SNAPSHOT&quot;</pre></div></div></div>
                   </div>
           </div>
 
