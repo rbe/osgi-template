@@ -9,6 +9,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>myservice-api</artifactId>
+    <name>myservice-api</name>
+    <url>http://github.com/${scm.user}/${project.parent.artifactId}/${project.artifactId}/</url>
+    <description>API of MyService</description>
     <packaging>bundle</packaging>
     <build>
         <resources>
@@ -40,6 +43,5 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>${project.artifactId}-${project.version}</finalName>
     </build>
 </project>

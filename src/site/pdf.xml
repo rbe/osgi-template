@@ -12,14 +12,15 @@
         <item name="Configuring Reports" ref="/examples/configuring-reports.xml.vm" />
         <item name="Limitations" ref="limitations.apt" />
         <item name="FAQ" ref="faq.fml" />
+        <item name="Readme" ref="readme.md"/>
     </toc>
     <cover>
+        <companyName>The Apache Software Foundation</companyName>
+        <companyLogo>http://www.apache.org/images/asf_logo_wide.png</companyLogo>
         <coverTitle>${project.name}</coverTitle>
-        <coverSubTitle>v. ${project.version}</coverSubTitle>
+        <coverSubTitle>Version ${project.version}</coverSubTitle>
         <coverType>User Guide</coverType>
         <projectName>${project.name}</projectName>
         <projectLogo>http://maven.apache.org/images/maventxt_logo_200.gif</projectLogo>
-        <companyName>The Apache Software Foundation</companyName>
-        <companyLogo>http://www.apache.org/images/asf_logo_wide.png</companyLogo>
     </cover>
 </document>

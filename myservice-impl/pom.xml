@@ -9,6 +9,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>myservice-impl</artifactId>
+    <name>myservice-impl</name>
+    <url>http://github.com/${scm.user}/${project.parent.artifactId}/${project.artifactId}/</url>
+    <description>Implementation of MyService</description>
     <packaging>bundle</packaging>
     <dependencies>
         <!-- OSGi -->
@@ -85,6 +88,5 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>${project.artifactId}-${project.version}</finalName>
     </build>
 </project>
